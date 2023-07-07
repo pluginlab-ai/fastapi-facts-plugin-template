@@ -23,16 +23,16 @@ npm i -g vercel
 vercel dev
 ```
 
-Your Flask application is now available at `http://localhost:3000`.
+Your FastAPI api is now available at `http://localhost:3000`.
 
-## Running Locally using Python
+## Running Locally using Docker
 
 ```bash
-pip install -r requirements.txt
-flask run
+docker build -t <image_name> .
+docker run -p 3000:8000 <image_name>
 ```
 
-Your Flask application is now available at `http://localhost:3000`.
+Your FastAPI api is now available at `http://localhost:3000`.
 
 ## Adding Authentication
 
