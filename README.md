@@ -1,98 +1,46 @@
-<p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/vercel-typescript-express-api/cebd0c563141a4cc7d279997b8cb5dd9232d7591/.github/images/favicon512x512-vercel-typescript-express-api.png" align="center" alt=":package: deploy-python-fastapi-in-vercel" />
- <h2 align="center">:package: deploy-python-fastapi-in-vercel</h2>
- <p align="center">This example shows how to use FastApi  on Vercel with Serverless Functions using the Python Runtime.</p>
-</p>
+# FastAPI Facts Plugin Template
 
-  <p align="center">
-    <a href="https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/deploy-python-fastapi-in-vercel?style=flat&color=336791" />
-    </a>
-    <a href="https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/deploy-python-fastapi-in-vercel?style=flat&color=336791" />
-    </a>
-    <br />
-  <a href="https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/issues/new/choose">Report Bug</a>
-  <a href="https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/issues/new/choose">Request Feature</a>
-  </p>
-  <h3 align="center">Systems on which it has been tested.</h3>
- <p align="center">
-  <a href="https://ubuntu.com/download">
-      <img alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white" />
-    </a>
-  <a href="https://www.microsoft.com/pt-br/software-download/windows10">
-      <img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white" />
-    </a>
-  </p>
-<p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
+![template-img](https://firebasestorage.googleapis.com/v0/b/pluginlab.appspot.com/o/public%2Ftemplates%2Ffastpi-template.jpg?alt=media)
 
-<p align="center"><strong></strong>✨</p>
+This starter ChatGPT Plugin template allows you to use FastAPI on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
-# Getting started
+To use it, you only have to follow the steps on [PluginLab](https://pluginlab.ai).
+[PluginLab](https://pluginlab.ai) will let you configure and manage your plugin OAS and manifest files.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhebertcisco%2Fdeploy-python-fastapi-in-vercel%2Ftree%2Fmain%2Fpython%2FFastApi&demo-title=FastApi%20%2B%20Vercel&demo-description=Use%20FastApi%202%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2FFastApi-python-template.vercel.app%2F&demo-image=https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
+The other advantage of using [PluginLab](https://pluginlab.ai) is that you will be able to configure OAuth and Monetization for your ChatGPT plugin in 5 minutes.
 
-# FastApi + Vercel
+## How it works
 
-This example shows how to use FastApi 0.88.0 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+* Go to [PluginLab](https://pluginlab.ai).
+* Click on "Create Plugin" and select this template.
+* Follow the deployment steps.
+* Enjoy your plugin!
 
-[![Python testing](https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/actions/workflows/python-app.yml)
-[![Docker Image CI](https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/actions/workflows/docker-image.yml/badge.svg)](https://github.com/hebertcisco/deploy-python-fastapi-in-vercel/actions/workflows/docker-image.yml)
+## Running Locally using Vercel
 
-## Demo
-
-[deploy-python-fastapi-in-vercel.vercel.app](https://deploy-python-fastapi-in-vercel.vercel.app)
-
-## How it Works
-
-This example uses the Web Server Gateway Interface (WSGI) with FastApi to enable handling requests on Vercel with Serverless Functions.
-
-## Running Locally
-
-### With Docker
 ```bash
-# Build the Docker image
-docker build -t deploy-python-fastapi-in-vercel .
-
-# Run the Docker container
-docker run -p 8000:8000 deploy-python-fastapi-in-vercel
-
+npm i -g vercel
+vercel dev
 ```
 
-### With uvicorn
+Your Flask application is now available at `http://localhost:3000`.
 
-#### Install dependencies
+## Running Locally using Python
 
 ```bash
 pip install -r requirements.txt
-```
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+flask run
 ```
 
-Your FastApi application is now available at `http://localhost:8000`.
+Your Flask application is now available at `http://localhost:3000`.
 
-## One-Click Deploy
+## Adding Authentication
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+You can add authentication to this plugin in a few clicks by using [PluginLab](https://pluginlab.ai).
+Please check our [documentation](https://docs.pluginlab.ai/en/category/authentication-nyfktk/) about authenticating users.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhebertcisco%2Fdeploy-python-fastapi-in-vercel%2Ftree%2Fmain%2Fpython%2FFastApi&demo-title=FastApi%20%2B%20Vercel&demo-description=Use%20FastApi%202%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2FFastApi-python-template.vercel.app%2F&demo-image=https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png)
+## Adding Monetization
 
-## 🤝 Contributing
+You can add monetization to this plugin in a few clicks by using [PluginLab](https://pluginlab.ai).
+Please check our [documentation](https://docs.pluginlab.ai/en/category/plugin-monetization-10nw5z4/) about monetizing your plugin.
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-Or buy me a coffee 🙌🏾
-
-<a href="https://www.buymeacoffee.com/hebertcisco">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
-</a>
-
-## 📝 License
-
-Copyright © 2023 [Hebert F Barros](https://github.com/hebertcisco).<br />
-This project is [MIT](LICENSE) licensed.
